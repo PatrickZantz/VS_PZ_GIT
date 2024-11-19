@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div dir="auto">
+      <div
+        class="prose dark:prose-invert inline leading-normal break-words min-w-0 [word-break:break-word]"
+      >
+        <span
+          >Um ein GitHub-Repository über SSH auf einem Mac zu verbinden, müssen
+          Sie zunächst einen SSH-Schlüssel erstellen und ihn Ihrem GitHub-Konto
+          hinzufügen. Hier ist eine Schritt-für-Schritt-Anleitung:</span
+        >
+        <h2 class="mb-2 mt-6 text-lg first:mt-3">SSH-Schlüssel generieren</h2>
+        <ol class="marker:text-textOff list-decimal pl-8">
+          <li index="0">
+            <span> </span
+            ><span><span>Öffnen Sie das Terminal auf Ihrem Mac.</span></span
+            ><span> </span>
+          </li>
+          <li index="1">
+            <span> </span
+            ><span
+              ><span
+                >Generieren Sie einen neuen SSH-Schlüssel mit folgendem
+                Befehl:</span
+              ></span
+            ><span> </span
+            ><span
+              ><div class="w-full max-w-[90vw]">
+                <pre
+                  class="not-prose w-full overflow-hidden rounded font-mono text-sm font-extralight"
+                ><div class="codeWrapper text-textMainDark selection:!text-superDark selection:bg-superDuper/10 bg-offset dark:bg-offsetDark my-md relative flex flex-col rounded font-mono text-sm font-thin"><div><div class="text-textOff dark:text-textOffDark bg-offsetPlus dark:bg-offsetPlusDark py-xs px-sm z-10 inline-block rounded-br rounded-tl-[3px] font-thin">bash</div></div><div class="sc-gtLWhw kqHiRG"><span style="font-size: inherit; font-family: inherit; background: transparent; color: rgb(197, 200, 198); border-radius: 3px; display: flex; line-height: 1.42857; overflow-x: auto; white-space: pre;"><code style="font-size: inherit; font-family: inherit; line-height: 1.66667; padding: 8px; white-space: pre-wrap;"><span style="opacity: 1; font-size: inherit; line-height: 1.42857; color: rgb(197, 200, 198); background-color: transparent; flex-shrink: 0; padding: 8px; text-align: right; user-select: none;"><span>ssh-keygen -t ed25519 -C </span><span class="token token" style="color: rgb(181, 189, 104);">"ihre_email@example.com"</span><span>
+        </span></span><span style="opacity: 1; font-size: inherit; line-height: 1.42857; color: rgb(197, 200, 198); background-color: transparent; flex-shrink: 0; padding: 8px; text-align: right; user-select: none;"></span></code></span><button aria-label="Copy Code" type="button" class="sc-blHHSb fdjstX"><svg class="icon" viewBox="0 0 384 512" width="16pt" height="16pt" fill="#c5c8c6"><path d="M280 240H168c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h112c4.4 0 8-3.6 8-8v-16c0-4.4-3.6-8-8-8zm0 96H168c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h112c4.4 0 8-3.6 8-8v-16c0-4.4-3.6-8-8-8zM112 232c-13.3 0-24 10.7-24 24s10.7 24 24 24 24-10.7 24-24-10.7-24-24-24zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24 24-10.7 24-24-10.7-24-24-24zM336 64h-80c0-35.3-28.7-64-64-64s-64 28.7-64 64H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM192 48c8.8 0 16 7.2 16 16s-7.2 16-16 16-16-7.2-16-16 7.2-16 16-16zm144 408c0 4.4-3.6 8-8 8H56c-4.4 0-8-3.6-8-8V120c0-4.4 3.6-8 8-8h40v32c0 8.8 7.2 16 16 16h160c8.8 0 16-7.2 16-16v-32h40c4.4 0 8 3.6 8 8v336z"></path></svg></button></div></div></pre></div></span
+            ><span> </span
+            ><span
+              ><span>Ersetzen Sie "</span
+              ><span
+                ><a
+                  target="_blank"
+                  rel="nofollow noopener"
+                  class="break-word hover:text-super hover:decoration-super dark:hover:text-superDark dark:hover:decoration-superDark underline decoration-from-font underline-offset-1 transition-all duration-300"
+                  href="mailto:ihre_email@example.com"
+                  >ihre_email@example.com</a
+                ></span
+              ><span
+                >" durch die E-Mail-Adresse, die Sie für Ihr GitHub-Konto
+                verwenden</span
+              ><span
+                ><a
+                  target="_blank"
+                  rel="nofollow noopener"
+                  class="citation ml-xs inline"
+                  data-state="closed"
+                  aria-label="How to Connect your MacBook to GitHub with SSH | Osaretin's Blog"
+                  href="https://swiftlogic.io/posts/connecting-to-gitHub-with-ssh/"
+                  ><span
+                    class="relative -top-[0.1rem] undefined light font-sans text-base text-textOff dark:text-textOffDark selection:bg-super/50 selection:text-textMain dark:selection:bg-superDuper/10 dark:selection:text-superDark"
+                    ><div
+                      class="inline-flex h-[1rem] min-w-[1rem] items-center justify-center rounded-full px-[0.3em] text-center font-mono text-[0.60rem] tabular-nums md:hover:text-white border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50 dark:ring-borderMainDark/50 dark:border-borderMainDark/50 transition duration-300 bg-offsetPlus dark:bg-offsetPlusDark md:hover:bg-super"
+                    >
+                      1
+                    </div></span
+                  ></a
+                ></span
+              ><span
+                ><span class="whitespace-nowrap"
+                  ><a
+                    target="_blank"
+                    rel="nofollow noopener"
+                    class="citation ml-xs inline"
+                    data-state="closed"
+                    aria-label="How to set up SSH key for GitHub on MacOS - Stackademic"
+                    href="https://blog.stackademic.com/how-to-set-up-ssh-key-for-github-on-macos-d7331d8c47a6?gi=28796ccc0233"
+                    ><span
+                      class="relative -top-[0.1rem] undefined light font-sans text-base text-textOff dark:text-textOffDark selection:bg-super/50 selection:text-textMain dark:selection:bg-superDuper/10 dark:selection:text-superDark"
+                      ><div
+                        class="inline-flex h-[1rem] min-w-[1rem] items-center justify-center rounded-full px-[0.3em] text-center font-mono text-[0.60rem] tabular-nums md:hover:text-white border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50 dark:ring-borderMainDark/50 dark:border-borderMainDark/50 transition duration-300 bg-offsetPlus dark:bg-offsetPlusDark md:hover:bg-super"
+                      >
+                        2
+                      </div></span
+                    ></a
+                  >.</span
+                ></span
+              ><span></span></span
+            ><span> </span>
+          </li>
+          <li index="2">
+            <span> </span
+            ><span
+              ><span
+                >Wenn Sie zur Eingabe eines Dateinamens aufgefordert werden,
+                drücken Sie einfach Enter, um den Standardspeicherort zu
+                akzeptieren.</span
+              ></span
+            ><span> </span>
+          </li>
+          <li index="3">
+            <span> </span
+            ><span
+              ><span
+                >Sie können optional eine Passphrase für zusätzliche Sicherheit
+                eingeben oder einfach Enter drücken, um keine Passphrase zu
+                verwenden</span
+              ><span
+                ><span class="whitespace-nowrap"
+                  ><a
+                    target="_blank"
+                    rel="nofollow noopener"
+                    class="citation ml-xs inline"
+                    data-state="closed"
+                    aria-label="How to Connect your MacBook to GitHub with SSH | Osaretin's Blog"
+                    href="https://swiftlogic.io/posts/connecting-to-gitHub-with-ssh/"
+                    ><span
+                      class="relative -top-[0.1rem] undefined light font-sans text-base text-textOff dark:text-textOffDark selection:bg-super/50 selection:text-textMain dark:selection:bg-superDuper/10 dark:selection:text-superDark"
+                      ><div
+                        class="inline-flex h-[1rem] min-w-[1rem] items-center justify-center rounded-full px-[0.3em] text-center font-mono text-[0.60rem] tabular-nums md:hover:text-white border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50 dark:ring-borderMainDark/50 dark:border-borderMainDark/50 transition duration-300 bg-offsetPlus dark:bg-offsetPlusDark md:hover:bg-super"
+                      >
+                        1
+                      </div></span
+                    ></a
+                  >.</span
+                ></span
+              ><span></span></span
+            ><span> </span>
+          </li>
+        </ol>
+        <h2 class="mb-2 mt-6 text-lg first:mt-3">
+          SSH-Schlüssel zum SSH-Agent hinzufügen
+        </h2>
+        <ol class="marker:text-textOff list-decimal pl-8">
+          <li index="0">
+            <span> </span
+            ><span><span>Starten Sie den SSH-Agent im Hintergrund:</span></span
+            ><span> </span
+            ><span
+              ><div class="w-full max-w-[90vw]">
+                <pre
+                  class="not-prose w-full overflow-hidden rounded font-mono text-sm font-extralight"
+                ><div class="codeWrapper text-textMainDark selection:!text-superDark selection:bg-superDuper/10 bg-offset dark:bg-offsetDark my-md relative flex flex-col rounded font-mono text-sm font-thin"><div><div class="text-textOff dark:text-textOffDark bg-offsetPlus dark:bg-offsetPlusDark py-xs px-sm z-10 inline-block rounded-br rounded-tl-[3px] font-thin">bash</div></div><div class="sc-gtLWhw kqHiRG"><span style="font-size: inherit; font-family: inherit; background: transparent; color: rgb(197, 200, 198); border-radius: 3px; display: flex; line-height: 1.42857; overflow-x: auto; white-space: pre;"><code style="font-size: inherit; font-family: inherit; line-height: 1.66667; padding: 8px; white-space: pre-wrap;"><span style="opacity: 1; font-size: inherit; line-height: 1.42857; color: rgb(197, 200, 198); background-color: transparent; flex-shrink: 0; padding: 8px; text-align: right; user-select: none;"><span class="token token" style="color: rgb(129, 162, 190);">eval</span><span> </span><span class="token token" style="color: rgb(181, 189, 104);">"</span><span class="token token" style="color: rgb(204, 102, 102);">$(</span><span class="token token" style="color: rgb(204, 102, 102);">ssh-agent -s</span><span class="token token" style="color: rgb(204, 102, 102);">)</span><span class="token token" style="color: rgb(181, 189, 104);">"</span><span>
+        </span></span><span style="opacity: 1; font-size: inherit; line-height: 1.42857; color: rgb(197, 200, 198); background-color: transparent; flex-shrink: 0; padding: 8px; text-align: right; user-select: none;"></span></code></span><button aria-label="Copy Code" type="button" class="sc-blHHSb fdjstX"><svg class="icon" viewBox="0 0 384 512" width="16pt" height="16pt" fill="#c5c8c6"><path d="M280 240H168c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h112c4.4 0 8-3.6 8-8v-16c0-4.4-3.6-8-8-8zm0 96H168c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h112c4.4 0 8-3.6 8-8v-16c0-4.4-3.6-8-8-8zM112 232c-13.3 0-24 10.7-24 24s10.7 24 24 24 24-10.7 24-24-10.7-24-24-24zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24 24-10.7 24-24-10.7-24-24-24zM336 64h-80c0-35.3-28.7-64-64-64s-64 28.7-64 64H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM192 48c8.8 0 16 7.2 16 16s-7.2 16-16 16-16-7.2-16-16 7.2-16 16-16zm144 408c0 4.4-3.6 8-8 8H56c-4.4 0-8-3.6-8-8V120c0-4.4 3.6-8 8-8h40v32c0 8.8 7.2 16 16 16h160c8.8 0 16-7.2 16-16v-32h40c4.4 0 8 3.6 8 8v336z"></path></svg></button></div></div></pre></div></span
+            ><span> </span>
+          </li>
+          <li index="1">
+            <span> </span
+            ><span
+              ><span
+                >Fügen Sie Ihren privaten SSH-Schlüssel zum SSH-Agent
+                hinzu:</span
+              ></span
+            ><span> </span
+            ><span
+              ><div class="w-full max-w-[90vw]">
+                <pre
+                  class="not-prose w-full overflow-hidden rounded font-mono text-sm font-extralight"
+                ><div class="codeWrapper text-textMainDark selection:!text-superDark selection:bg-superDuper/10 bg-offset dark:bg-offsetDark my-md relative flex flex-col rounded font-mono text-sm font-thin"><div><div class="text-textOff dark:text-textOffDark bg-offsetPlus dark:bg-offsetPlusDark py-xs px-sm z-10 inline-block rounded-br rounded-tl-[3px] font-thin">bash</div></div><div class="sc-gtLWhw kqHiRG"><span style="font-size: inherit; font-family: inherit; background: transparent; color: rgb(197, 200, 198); border-radius: 3px; display: flex; line-height: 1.42857; overflow-x: auto; white-space: pre;"><code style="font-size: inherit; font-family: inherit; line-height: 1.66667; padding: 8px; white-space: pre-wrap;"><span style="opacity: 1; font-size: inherit; line-height: 1.42857; color: rgb(197, 200, 198); background-color: transparent; flex-shrink: 0; padding: 8px; text-align: right; user-select: none;"><span>ssh-add --apple-use-keychain ~/.ssh/id_ed25519
+        </span></span><span style="opacity: 1; font-size: inherit; line-height: 1.42857; color: rgb(197, 200, 198); background-color: transparent; flex-shrink: 0; padding: 8px; text-align: right; user-select: none;"></span></code></span><button aria-label="Copy Code" type="button" class="sc-blHHSb fdjstX"><svg class="icon" viewBox="0 0 384 512" width="16pt" height="16pt" fill="#c5c8c6"><path d="M280 240H168c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h112c4.4 0 8-3.6 8-8v-16c0-4.4-3.6-8-8-8zm0 96H168c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h112c4.4 0 8-3.6 8-8v-16c0-4.4-3.6-8-8-8zM112 232c-13.3 0-24 10.7-24 24s10.7 24 24 24 24-10.7 24-24-10.7-24-24-24zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24 24-10.7 24-24-10.7-24-24-24zM336 64h-80c0-35.3-28.7-64-64-64s-64 28.7-64 64H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM192 48c8.8 0 16 7.2 16 16s-7.2 16-16 16-16-7.2-16-16 7.2-16 16-16zm144 408c0 4.4-3.6 8-8 8H56c-4.4 0-8-3.6-8-8V120c0-4.4 3.6-8 8-8h40v32c0 8.8 7.2 16 16 16h160c8.8 0 16-7.2 16-16v-32h40c4.4 0 8 3.6 8 8v336z"></path></svg></button></div></div></pre></div></span
+            ><span> </span
+            ><span
+              ><span
+                >Wenn Sie keine Passphrase verwendet haben, lassen Sie die
+                Option </span
+              ><span><code>--apple-use-keychain</code></span
+              ><span> weg</span
+              ><span
+                ><span class="whitespace-nowrap"
+                  ><a
+                    target="_blank"
+                    rel="nofollow noopener"
+                    class="citation ml-xs inline"
+                    data-state="closed"
+                    aria-label="Generating a new SSH key and adding it to the ssh-agent"
+                    href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent"
+                    ><span
+                      class="relative -top-[0.1rem] undefined light font-sans text-base text-textOff dark:text-textOffDark selection:bg-super/50 selection:text-textMain dark:selection:bg-superDuper/10 dark:selection:text-superDark"
+                      ><div
+                        class="inline-flex h-[1rem] min-w-[1rem] items-center justify-center rounded-full px-[0.3em] text-center font-mono text-[0.60rem] tabular-nums md:hover:text-white border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50 dark:ring-borderMainDark/50 dark:border-borderMainDark/50 transition duration-300 bg-offsetPlus dark:bg-offsetPlusDark md:hover:bg-super"
+                      >
+                        5
+                      </div></span
+                    ></a
+                  >.</span
+                ></span
+              ><span></span></span
+            ><span> </span>
+          </li>
+        </ol>
+        <h2 class="mb-2 mt-6 text-lg first:mt-3">
+          SSH-Schlüssel zu GitHub hinzufügen
+        </h2>
+        <ol class="marker:text-textOff list-decimal pl-8">
+          <li index="0">
+            <span> </span
+            ><span
+              ><span
+                >Kopieren Sie den öffentlichen SSH-Schlüssel in die
+                Zwischenablage:</span
+              ></span
+            ><span> </span
+            ><span
+              ><div class="w-full max-w-[90vw]">
+                <pre
+                  class="not-prose w-full overflow-hidden rounded font-mono text-sm font-extralight"
+                ><div class="codeWrapper text-textMainDark selection:!text-superDark selection:bg-superDuper/10 bg-offset dark:bg-offsetDark my-md relative flex flex-col rounded font-mono text-sm font-thin"><div><div class="text-textOff dark:text-textOffDark bg-offsetPlus dark:bg-offsetPlusDark py-xs px-sm z-10 inline-block rounded-br rounded-tl-[3px] font-thin">bash</div></div><div class="sc-gtLWhw kqHiRG"><span style="font-size: inherit; font-family: inherit; background: transparent; color: rgb(197, 200, 198); border-radius: 3px; display: flex; line-height: 1.42857; overflow-x: auto; white-space: pre;"><code style="font-size: inherit; font-family: inherit; line-height: 1.66667; padding: 8px; white-space: pre-wrap;"><span style="opacity: 1; font-size: inherit; line-height: 1.42857; color: rgb(197, 200, 198); background-color: transparent; flex-shrink: 0; padding: 8px; text-align: right; user-select: none;"><span>pbcopy </span><span class="token token operator">&lt;</span><span> ~/.ssh/id_ed25519.pub
+        </span></span><span style="opacity: 1; font-size: inherit; line-height: 1.42857; color: rgb(197, 200, 198); background-color: transparent; flex-shrink: 0; padding: 8px; text-align: right; user-select: none;"></span></code></span><button aria-label="Copy Code" type="button" class="sc-blHHSb fdjstX"><svg class="icon" viewBox="0 0 384 512" width="16pt" height="16pt" fill="#c5c8c6"><path d="M280 240H168c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h112c4.4 0 8-3.6 8-8v-16c0-4.4-3.6-8-8-8zm0 96H168c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h112c4.4 0 8-3.6 8-8v-16c0-4.4-3.6-8-8-8zM112 232c-13.3 0-24 10.7-24 24s10.7 24 24 24 24-10.7 24-24-10.7-24-24-24zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24 24-10.7 24-24-10.7-24-24-24zM336 64h-80c0-35.3-28.7-64-64-64s-64 28.7-64 64H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM192 48c8.8 0 16 7.2 16 16s-7.2 16-16 16-16-7.2-16-16 7.2-16 16-16zm144 408c0 4.4-3.6 8-8 8H56c-4.4 0-8-3.6-8-8V120c0-4.4 3.6-8 8-8h40v32c0 8.8 7.2 16 16 16h160c8.8 0 16-7.2 16-16v-32h40c4.4 0 8 3.6 8 8v336z"></path></svg></button></div></div></pre></div></span
+            ><span> </span>
+          </li>
+          <li index="1">
+            <span> </span
+            ><span
+              ><span
+                >Melden Sie sich bei GitHub an und navigieren Sie zu "Settings"
+                &gt; "SSH and GPG keys"</span
+              ><span
+                ><a
+                  target="_blank"
+                  rel="nofollow noopener"
+                  class="citation ml-xs inline"
+                  data-state="closed"
+                  aria-label="How to set up SSH key for GitHub on MacOS - Stackademic"
+                  href="https://blog.stackademic.com/how-to-set-up-ssh-key-for-github-on-macos-d7331d8c47a6?gi=28796ccc0233"
+                  ><span
+                    class="relative -top-[0.1rem] undefined light font-sans text-base text-textOff dark:text-textOffDark selection:bg-super/50 selection:text-textMain dark:selection:bg-superDuper/10 dark:selection:text-superDark"
+                    ><div
+                      class="inline-flex h-[1rem] min-w-[1rem] items-center justify-center rounded-full px-[0.3em] text-center font-mono text-[0.60rem] tabular-nums md:hover:text-white border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50 dark:ring-borderMainDark/50 dark:border-borderMainDark/50 transition duration-300 bg-offsetPlus dark:bg-offsetPlusDark md:hover:bg-super"
+                    >
+                      2
+                    </div></span
+                  ></a
+                ></span
+              ><span
+                ><span class="whitespace-nowrap"
+                  ><a
+                    target="_blank"
+                    rel="nofollow noopener"
+                    class="citation ml-xs inline"
+                    data-state="closed"
+                    aria-label="Setting up SSH Keys on Mac for Github - DEV Community"
+                    href="https://dev.to/pthapa1/setting-up-ssh-keys-on-mac-for-github-3b2m"
+                    ><span
+                      class="relative -top-[0.1rem] undefined light font-sans text-base text-textOff dark:text-textOffDark selection:bg-super/50 selection:text-textMain dark:selection:bg-superDuper/10 dark:selection:text-superDark"
+                      ><div
+                        class="inline-flex h-[1rem] min-w-[1rem] items-center justify-center rounded-full px-[0.3em] text-center font-mono text-[0.60rem] tabular-nums md:hover:text-white border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50 dark:ring-borderMainDark/50 dark:border-borderMainDark/50 transition duration-300 bg-offsetPlus dark:bg-offsetPlusDark md:hover:bg-super"
+                      >
+                        4
+                      </div></span
+                    ></a
+                  >.</span
+                ></span
+              ><span></span></span
+            ><span> </span>
+          </li>
+          <li index="2">
+            <span> </span
+            ><span
+              ><span>Klicken Sie auf "New SSH key" oder "Add SSH key"</span
+              ><span
+                ><a
+                  target="_blank"
+                  rel="nofollow noopener"
+                  class="citation ml-xs inline"
+                  data-state="closed"
+                  aria-label="How to set up SSH key for GitHub on MacOS - Stackademic"
+                  href="https://blog.stackademic.com/how-to-set-up-ssh-key-for-github-on-macos-d7331d8c47a6?gi=28796ccc0233"
+                  ><span
+                    class="relative -top-[0.1rem] undefined light font-sans text-base text-textOff dark:text-textOffDark selection:bg-super/50 selection:text-textMain dark:selection:bg-superDuper/10 dark:selection:text-superDark"
+                    ><div
+                      class="inline-flex h-[1rem] min-w-[1rem] items-center justify-center rounded-full px-[0.3em] text-center font-mono text-[0.60rem] tabular-nums md:hover:text-white border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50 dark:ring-borderMainDark/50 dark:border-borderMainDark/50 transition duration-300 bg-offsetPlus dark:bg-offsetPlusDark md:hover:bg-super"
+                    >
+                      2
+                    </div></span
+                  ></a
+                ></span
+              ><span
+                ><span class="whitespace-nowrap"
+                  ><a
+                    target="_blank"
+                    rel="nofollow noopener"
+                    class="citation ml-xs inline"
+                    data-state="closed"
+                    aria-label="Setting up SSH Keys on Mac for Github - DEV Community"
+                    href="https://dev.to/pthapa1/setting-up-ssh-keys-on-mac-for-github-3b2m"
+                    ><span
+                      class="relative -top-[0.1rem] undefined light font-sans text-base text-textOff dark:text-textOffDark selection:bg-super/50 selection:text-textMain dark:selection:bg-superDuper/10 dark:selection:text-superDark"
+                      ><div
+                        class="inline-flex h-[1rem] min-w-[1rem] items-center justify-center rounded-full px-[0.3em] text-center font-mono text-[0.60rem] tabular-nums md:hover:text-white border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50 dark:ring-borderMainDark/50 dark:border-borderMainDark/50 transition duration-300 bg-offsetPlus dark:bg-offsetPlusDark md:hover:bg-super"
+                      >
+                        4
+                      </div></span
+                    ></a
+                  >.</span
+                ></span
+              ><span></span></span
+            ><span> </span>
+          </li>
+          <li index="3">
+            <span> </span
+            ><span
+              ><span
+                >Geben Sie einen beschreibenden Titel für den Schlüssel ein und
+                fügen Sie den kopierten öffentlichen Schlüssel in das Feld "Key"
+                ein</span
+              ><span
+                ><a
+                  target="_blank"
+                  rel="nofollow noopener"
+                  class="citation ml-xs inline"
+                  data-state="closed"
+                  aria-label="How to set up SSH key for GitHub on MacOS - Stackademic"
+                  href="https://blog.stackademic.com/how-to-set-up-ssh-key-for-github-on-macos-d7331d8c47a6?gi=28796ccc0233"
+                  ><span
+                    class="relative -top-[0.1rem] undefined light font-sans text-base text-textOff dark:text-textOffDark selection:bg-super/50 selection:text-textMain dark:selection:bg-superDuper/10 dark:selection:text-superDark"
+                    ><div
+                      class="inline-flex h-[1rem] min-w-[1rem] items-center justify-center rounded-full px-[0.3em] text-center font-mono text-[0.60rem] tabular-nums md:hover:text-white border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50 dark:ring-borderMainDark/50 dark:border-borderMainDark/50 transition duration-300 bg-offsetPlus dark:bg-offsetPlusDark md:hover:bg-super"
+                    >
+                      2
+                    </div></span
+                  ></a
+                ></span
+              ><span
+                ><span class="whitespace-nowrap"
+                  ><a
+                    target="_blank"
+                    rel="nofollow noopener"
+                    class="citation ml-xs inline"
+                    data-state="closed"
+                    aria-label="Setting up SSH Keys on Mac for Github - DEV Community"
+                    href="https://dev.to/pthapa1/setting-up-ssh-keys-on-mac-for-github-3b2m"
+                    ><span
+                      class="relative -top-[0.1rem] undefined light font-sans text-base text-textOff dark:text-textOffDark selection:bg-super/50 selection:text-textMain dark:selection:bg-superDuper/10 dark:selection:text-superDark"
+                      ><div
+                        class="inline-flex h-[1rem] min-w-[1rem] items-center justify-center rounded-full px-[0.3em] text-center font-mono text-[0.60rem] tabular-nums md:hover:text-white border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50 dark:ring-borderMainDark/50 dark:border-borderMainDark/50 transition duration-300 bg-offsetPlus dark:bg-offsetPlusDark md:hover:bg-super"
+                      >
+                        4
+                      </div></span
+                    ></a
+                  >.</span
+                ></span
+              ><span></span></span
+            ><span> </span>
+          </li>
+          <li index="4">
+            <span> </span
+            ><span
+              ><span
+                >Klicken Sie auf "Add SSH key", um den Vorgang
+                abzuschließen</span
+              ><span
+                ><a
+                  target="_blank"
+                  rel="nofollow noopener"
+                  class="citation ml-xs inline"
+                  data-state="closed"
+                  aria-label="How to set up SSH key for GitHub on MacOS - Stackademic"
+                  href="https://blog.stackademic.com/how-to-set-up-ssh-key-for-github-on-macos-d7331d8c47a6?gi=28796ccc0233"
+                  ><span
+                    class="relative -top-[0.1rem] undefined light font-sans text-base text-textOff dark:text-textOffDark selection:bg-super/50 selection:text-textMain dark:selection:bg-superDuper/10 dark:selection:text-superDark"
+                    ><div
+                      class="inline-flex h-[1rem] min-w-[1rem] items-center justify-center rounded-full px-[0.3em] text-center font-mono text-[0.60rem] tabular-nums md:hover:text-white border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50 dark:ring-borderMainDark/50 dark:border-borderMainDark/50 transition duration-300 bg-offsetPlus dark:bg-offsetPlusDark md:hover:bg-super"
+                    >
+                      2
+                    </div></span
+                  ></a
+                ></span
+              ><span
+                ><span class="whitespace-nowrap"
+                  ><a
+                    target="_blank"
+                    rel="nofollow noopener"
+                    class="citation ml-xs inline"
+                    data-state="closed"
+                    aria-label="Setting up SSH Keys on Mac for Github - DEV Community"
+                    href="https://dev.to/pthapa1/setting-up-ssh-keys-on-mac-for-github-3b2m"
+                    ><span
+                      class="relative -top-[0.1rem] undefined light font-sans text-base text-textOff dark:text-textOffDark selection:bg-super/50 selection:text-textMain dark:selection:bg-superDuper/10 dark:selection:text-superDark"
+                      ><div
+                        class="inline-flex h-[1rem] min-w-[1rem] items-center justify-center rounded-full px-[0.3em] text-center font-mono text-[0.60rem] tabular-nums md:hover:text-white border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50 dark:ring-borderMainDark/50 dark:border-borderMainDark/50 transition duration-300 bg-offsetPlus dark:bg-offsetPlusDark md:hover:bg-super"
+                      >
+                        4
+                      </div></span
+                    ></a
+                  >.</span
+                ></span
+              ><span></span></span
+            ><span> </span>
+          </li>
+        </ol>
+        <h2 class="mb-2 mt-6 text-lg first:mt-3">SSH-Verbindung testen</h2>
+        <span
+          >Um sicherzustellen, dass alles korrekt eingerichtet wurde, können Sie
+          die SSH-Verbindung zu GitHub testen:</span
+        >
+        <div class="w-full max-w-[90vw]">
+          <pre
+            class="not-prose w-full overflow-hidden rounded font-mono text-sm font-extralight"
+          ><div class="codeWrapper text-textMainDark selection:!text-superDark selection:bg-superDuper/10 bg-offset dark:bg-offsetDark my-md relative flex flex-col rounded font-mono text-sm font-thin"><div><div class="text-textOff dark:text-textOffDark bg-offsetPlus dark:bg-offsetPlusDark py-xs px-sm z-10 inline-block rounded-br rounded-tl-[3px] font-thin">bash</div></div><div class="sc-gtLWhw kqHiRG"><span style="font-size: inherit; font-family: inherit; background: transparent; color: rgb(197, 200, 198); border-radius: 3px; display: flex; line-height: 1.42857; overflow-x: auto; white-space: pre;"><code style="font-size: inherit; font-family: inherit; line-height: 1.66667; padding: 8px; white-space: pre-wrap;"><span style="opacity: 1; font-size: inherit; line-height: 1.42857; color: rgb(197, 200, 198); background-color: transparent; flex-shrink: 0; padding: 8px; text-align: right; user-select: none;"><span class="token token" style="color: rgb(197, 200, 198);">ssh</span><span> -T git@github.com
+        </span></span><span style="opacity: 1; font-size: inherit; line-height: 1.42857; color: rgb(197, 200, 198); background-color: transparent; flex-shrink: 0; padding: 8px; text-align: right; user-select: none;"></span></code></span><button aria-label="Copy Code" type="button" class="sc-blHHSb fdjstX"><svg class="icon" viewBox="0 0 384 512" width="16pt" height="16pt" fill="#c5c8c6"><path d="M280 240H168c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h112c4.4 0 8-3.6 8-8v-16c0-4.4-3.6-8-8-8zm0 96H168c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h112c4.4 0 8-3.6 8-8v-16c0-4.4-3.6-8-8-8zM112 232c-13.3 0-24 10.7-24 24s10.7 24 24 24 24-10.7 24-24-10.7-24-24-24zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24 24-10.7 24-24-10.7-24-24-24zM336 64h-80c0-35.3-28.7-64-64-64s-64 28.7-64 64H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM192 48c8.8 0 16 7.2 16 16s-7.2 16-16 16-16-7.2-16-16 7.2-16 16-16zm144 408c0 4.4-3.6 8-8 8H56c-4.4 0-8-3.6-8-8V120c0-4.4 3.6-8 8-8h40v32c0 8.8 7.2 16 16 16h160c8.8 0 16-7.2 16-16v-32h40c4.4 0 8 3.6 8 8v336z"></path></svg></button></div></div></pre>
+        </div>
+        <span
+          >Wenn alles funktioniert hat, sollten Sie eine Begrüßungsnachricht von
+          GitHub sehen</span
+        ><span
+          ><a
+            target="_blank"
+            rel="nofollow noopener"
+            class="citation ml-xs inline"
+            data-state="closed"
+            aria-label="How to Connect your MacBook to GitHub with SSH | Osaretin's Blog"
+            href="https://swiftlogic.io/posts/connecting-to-gitHub-with-ssh/"
+            ><span
+              class="relative -top-[0.1rem] undefined light font-sans text-base text-textOff dark:text-textOffDark selection:bg-super/50 selection:text-textMain dark:selection:bg-superDuper/10 dark:selection:text-superDark"
+              ><div
+                class="inline-flex h-[1rem] min-w-[1rem] items-center justify-center rounded-full px-[0.3em] text-center font-mono text-[0.60rem] tabular-nums md:hover:text-white border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50 dark:ring-borderMainDark/50 dark:border-borderMainDark/50 transition duration-300 bg-offsetPlus dark:bg-offsetPlusDark md:hover:bg-super"
+              >
+                1
+              </div></span
+            ></a
+          ></span
+        ><span
+          ><span class="whitespace-nowrap"
+            ><a
+              target="_blank"
+              rel="nofollow noopener"
+              class="citation ml-xs inline"
+              data-state="closed"
+              aria-label="Setting up SSH Keys on Mac for Github - DEV Community"
+              href="https://dev.to/pthapa1/setting-up-ssh-keys-on-mac-for-github-3b2m"
+              ><span
+                class="relative -top-[0.1rem] undefined light font-sans text-base text-textOff dark:text-textOffDark selection:bg-super/50 selection:text-textMain dark:selection:bg-superDuper/10 dark:selection:text-superDark"
+                ><div
+                  class="inline-flex h-[1rem] min-w-[1rem] items-center justify-center rounded-full px-[0.3em] text-center font-mono text-[0.60rem] tabular-nums md:hover:text-white border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50 dark:ring-borderMainDark/50 dark:border-borderMainDark/50 transition duration-300 bg-offsetPlus dark:bg-offsetPlusDark md:hover:bg-super"
+                >
+                  4
+                </div></span
+              ></a
+            >.</span
+          ></span
+        ><span></span>
+        <h2 class="mb-2 mt-6 text-lg first:mt-3">Repository klonen</h2>
+        <span
+          >Nachdem Sie Ihren SSH-Schlüssel eingerichtet haben, können Sie nun
+          Repositories über SSH klonen. Verwenden Sie dazu den SSH-URL des
+          Repositories:</span
+        >
+        <div class="w-full max-w-[90vw]">
+          <pre
+            class="not-prose w-full overflow-hidden rounded font-mono text-sm font-extralight"
+          ><div class="codeWrapper text-textMainDark selection:!text-superDark selection:bg-superDuper/10 bg-offset dark:bg-offsetDark my-md relative flex flex-col rounded font-mono text-sm font-thin"><div><div class="text-textOff dark:text-textOffDark bg-offsetPlus dark:bg-offsetPlusDark py-xs px-sm z-10 inline-block rounded-br rounded-tl-[3px] font-thin">bash</div></div><div class="sc-gtLWhw kqHiRG"><span style="font-size: inherit; font-family: inherit; background: transparent; color: rgb(197, 200, 198); border-radius: 3px; display: flex; line-height: 1.42857; overflow-x: auto; white-space: pre;"><code style="font-size: inherit; font-family: inherit; line-height: 1.66667; padding: 8px; white-space: pre-wrap;"><span style="opacity: 1; font-size: inherit; line-height: 1.42857; color: rgb(197, 200, 198); background-color: transparent; flex-shrink: 0; padding: 8px; text-align: right; user-select: none;"><span class="token token" style="color: rgb(197, 200, 198);">git</span><span> clone git@github.com:benutzername/repository.git
+        </span></span><span style="opacity: 1; font-size: inherit; line-height: 1.42857; color: rgb(197, 200, 198); background-color: transparent; flex-shrink: 0; padding: 8px; text-align: right; user-select: none;"></span></code></span><button aria-label="Copy Code" type="button" class="sc-blHHSb fdjstX"><svg class="icon" viewBox="0 0 384 512" width="16pt" height="16pt" fill="#c5c8c6"><path d="M280 240H168c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h112c4.4 0 8-3.6 8-8v-16c0-4.4-3.6-8-8-8zm0 96H168c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h112c4.4 0 8-3.6 8-8v-16c0-4.4-3.6-8-8-8zM112 232c-13.3 0-24 10.7-24 24s10.7 24 24 24 24-10.7 24-24-10.7-24-24-24zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24 24-10.7 24-24-10.7-24-24-24zM336 64h-80c0-35.3-28.7-64-64-64s-64 28.7-64 64H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM192 48c8.8 0 16 7.2 16 16s-7.2 16-16 16-16-7.2-16-16 7.2-16 16-16zm144 408c0 4.4-3.6 8-8 8H56c-4.4 0-8-3.6-8-8V120c0-4.4 3.6-8 8-8h40v32c0 8.8 7.2 16 16 16h160c8.8 0 16-7.2 16-16v-32h40c4.4 0 8 3.6 8 8v336z"></path></svg></button></div></div></pre>
+        </div>
+        <span
+          >Ersetzen Sie "benutzername" und "repository" durch die entsprechenden
+          Werte für Ihr Repository</span
+        ><span
+          ><span class="whitespace-nowrap"
+            ><a
+              target="_blank"
+              rel="nofollow noopener"
+              class="citation ml-xs inline"
+              data-state="closed"
+              aria-label="Setting up SSH Keys on Mac for Github - DEV Community"
+              href="https://dev.to/pthapa1/setting-up-ssh-keys-on-mac-for-github-3b2m"
+              ><span
+                class="relative -top-[0.1rem] undefined light font-sans text-base text-textOff dark:text-textOffDark selection:bg-super/50 selection:text-textMain dark:selection:bg-superDuper/10 dark:selection:text-superDark"
+                ><div
+                  class="inline-flex h-[1rem] min-w-[1rem] items-center justify-center rounded-full px-[0.3em] text-center font-mono text-[0.60rem] tabular-nums md:hover:text-white border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50 dark:ring-borderMainDark/50 dark:border-borderMainDark/50 transition duration-300 bg-offsetPlus dark:bg-offsetPlusDark md:hover:bg-super"
+                >
+                  4
+                </div></span
+              ></a
+            >.</span
+          ></span
+        ><span></span><span class="mt-md block"></span>
+        <span
+          >Mit diesen Schritten sollten Sie nun in der Lage sein,
+          GitHub-Repositories über SSH auf Ihrem Mac zu verwenden. Dies
+          ermöglicht eine sichere Verbindung ohne die Notwendigkeit, bei jedem
+          Push oder Pull Ihren Benutzernamen und ein persönliches Zugriffstoken
+          einzugeben.</span
+        >
+      </div>
+    </div>
+
+    <div dir="auto">
+      <div
+        class="prose dark:prose-invert inline leading-normal break-words min-w-0 [word-break:break-word]"
+      >
+        <span
+          >Diese Fehlermeldung tritt auf, wenn Ihr System versucht, zum ersten
+          Mal eine SSH-Verbindung mit GitHub herzustellen, aber die
+          Authentizität des GitHub-Servers nicht verifizieren kann. Hier sind
+          die Schritte, um dieses Problem zu lösen:</span
+        >
+        <h2 class="mb-2 mt-6 text-lg first:mt-3">
+          Überprüfen der GitHub SSH-Schlüssel
+        </h2>
+        <span
+          >Zunächst sollten Sie die offiziellen SSH-Schlüssel von GitHub
+          überprüfen. GitHub stellt eine Liste ihrer öffentlichen
+          SSH-Schlüssel-Fingerabdrücke zur Verfügung</span
+        ><span
+          ><a
+            target="_blank"
+            rel="nofollow noopener"
+            class="citation ml-xs inline"
+            data-state="closed"
+            aria-label="GitHub's SSH key fingerprints - GitHub Docs"
+            href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/githubs-ssh-key-fingerprints"
+            ><span
+              class="relative -top-[0.1rem] undefined light font-sans text-base text-textOff dark:text-textOffDark selection:bg-super/50 selection:text-textMain dark:selection:bg-superDuper/10 dark:selection:text-superDark"
+              ><div
+                class="inline-flex h-[1rem] min-w-[1rem] items-center justify-center rounded-full px-[0.3em] text-center font-mono text-[0.60rem] tabular-nums md:hover:text-white border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50 dark:ring-borderMainDark/50 dark:border-borderMainDark/50 transition duration-300 bg-offsetPlus dark:bg-offsetPlusDark md:hover:bg-super"
+              >
+                2
+              </div></span
+            ></a
+          ></span
+        ><span>:</span>
+        <ul class="marker:text-textOff list-disc pl-8">
+          <li index="0">
+            <span>RSA: </span
+            ><span
+              ><code
+                >SHA256:uNiVztksCsDhcc0u9e8BujQXVUpKZIDTMczCvj3tD2s</code
+              ></span
+            >
+          </li>
+          <li index="1">
+            <span>ECDSA: </span
+            ><span
+              ><code
+                >SHA256:p2QAMXNIC1TJYWeIOttrVc98/R1BUFWu3/LiyKgUfQM</code
+              ></span
+            >
+          </li>
+          <li index="2">
+            <span>Ed25519: </span
+            ><span
+              ><code
+                >SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU</code
+              ></span
+            >
+          </li>
+        </ul>
+        <h2 class="mb-2 mt-6 text-lg first:mt-3">
+          Aktualisieren der known_hosts Datei
+        </h2>
+        <span
+          >Um das Problem zu lösen, können Sie den GitHub-Hostschlüssel manuell
+          zu Ihrer </span
+        ><span><code>known_hosts</code></span
+        ><span> Datei hinzufügen:</span>
+        <ol class="marker:text-textOff list-decimal pl-8">
+          <li index="0">
+            <span> </span><span><span>Öffnen Sie ein Terminal.</span></span
+            ><span> </span>
+          </li>
+          <li index="1">
+            <span> </span
+            ><span
+              ><span
+                >Führen Sie den folgenden Befehl aus, um den
+                GitHub-Hostschlüssel automatisch hinzuzufügen:</span
+              ></span
+            ><span> </span
+            ><span
+              ><div class="w-full max-w-[90vw]">
+                <pre
+                  class="not-prose w-full overflow-hidden rounded font-mono text-sm font-extralight"
+                ><div class="codeWrapper text-textMainDark selection:!text-superDark selection:bg-superDuper/10 bg-offset dark:bg-offsetDark my-md relative flex flex-col rounded font-mono text-sm font-thin"><div><div class="text-textOff dark:text-textOffDark bg-offsetPlus dark:bg-offsetPlusDark py-xs px-sm z-10 inline-block rounded-br rounded-tl-[3px] font-thin">bash</div></div><div class="sc-gtLWhw kqHiRG"><span style="font-size: inherit; font-family: inherit; background: transparent; color: rgb(197, 200, 198); border-radius: 3px; display: flex; line-height: 1.42857; overflow-x: auto; white-space: pre;"><code style="font-size: inherit; font-family: inherit; line-height: 1.66667; padding: 8px; white-space: pre-wrap;"><span style="opacity: 1; font-size: inherit; line-height: 1.42857; color: rgb(197, 200, 198); background-color: transparent; flex-shrink: 0; padding: 8px; text-align: right; user-select: none;"><span>ssh-keyscan github.com </span><span class="token token operator">&gt;&gt;</span><span> ~/.ssh/known_hosts
+            </span></span><span style="opacity: 1; font-size: inherit; line-height: 1.42857; color: rgb(197, 200, 198); background-color: transparent; flex-shrink: 0; padding: 8px; text-align: right; user-select: none;"></span></code></span><button aria-label="Copy Code" type="button" class="sc-blHHSb fdjstX"><svg class="icon" viewBox="0 0 384 512" width="16pt" height="16pt" fill="#c5c8c6"><path d="M280 240H168c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h112c4.4 0 8-3.6 8-8v-16c0-4.4-3.6-8-8-8zm0 96H168c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h112c4.4 0 8-3.6 8-8v-16c0-4.4-3.6-8-8-8zM112 232c-13.3 0-24 10.7-24 24s10.7 24 24 24 24-10.7 24-24-10.7-24-24-24zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24 24-10.7 24-24-10.7-24-24-24zM336 64h-80c0-35.3-28.7-64-64-64s-64 28.7-64 64H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM192 48c8.8 0 16 7.2 16 16s-7.2 16-16 16-16-7.2-16-16 7.2-16 16-16zm144 408c0 4.4-3.6 8-8 8H56c-4.4 0-8-3.6-8-8V120c0-4.4 3.6-8 8-8h40v32c0 8.8 7.2 16 16 16h160c8.8 0 16-7.2 16-16v-32h40c4.4 0 8 3.6 8 8v336z"></path></svg></button></div></div></pre></div></span
+            ><span> </span
+            ><span
+              ><span
+                >Dieser Befehl fügt den aktuellen öffentlichen Schlüssel von
+                GitHub zu Ihrer </span
+              ><span><code>known_hosts</code></span
+              ><span> Datei hinzu</span
+              ><span
+                ><span class="whitespace-nowrap"
+                  ><a
+                    target="_blank"
+                    rel="nofollow noopener"
+                    class="citation ml-xs inline"
+                    data-state="closed"
+                    aria-label="Resolving Host Key Verification Issue with GitHub SSH"
+                    href="https://www.devopsconsulting.in/blog/resolving-host-key-verification-issue-with-github-ssh/"
+                    ><span
+                      class="relative -top-[0.1rem] undefined light font-sans text-base text-textOff dark:text-textOffDark selection:bg-super/50 selection:text-textMain dark:selection:bg-superDuper/10 dark:selection:text-superDark"
+                      ><div
+                        class="inline-flex h-[1rem] min-w-[1rem] items-center justify-center rounded-full px-[0.3em] text-center font-mono text-[0.60rem] tabular-nums md:hover:text-white border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50 dark:ring-borderMainDark/50 dark:border-borderMainDark/50 transition duration-300 bg-offsetPlus dark:bg-offsetPlusDark md:hover:bg-super"
+                      >
+                        4
+                      </div></span
+                    ></a
+                  >.</span
+                ></span
+              ><span></span></span
+            ><span> </span>
+          </li>
+        </ol>
+        <h2 class="mb-2 mt-6 text-lg first:mt-3">
+          Erneuter Verbindungsversuch
+        </h2>
+        <span
+          >Nachdem Sie den Schlüssel hinzugefügt haben, versuchen Sie erneut,
+          sich mit GitHub zu verbinden oder das Repository zu klonen. Die
+          Fehlermeldung sollte nun nicht mehr erscheinen.</span
+        >
+        <h2 class="mb-2 mt-6 text-lg first:mt-3">Sicherheitshinweis</h2>
+        <span
+          >Wenn Sie sich Sorgen um die Sicherheit machen, können Sie den
+          Fingerabdruck des Schlüssels, den Sie erhalten, mit den offiziellen
+          Fingerabdrücken von GitHub vergleichen. Wenn sie übereinstimmen,
+          können Sie sicher sein, dass Sie sich tatsächlich mit GitHub
+          verbinden</span
+        ><span
+          ><a
+            target="_blank"
+            rel="nofollow noopener"
+            class="citation ml-xs inline"
+            data-state="closed"
+            aria-label="Error: Host key verification failed - GitHub Docs"
+            href="https://docs.github.com/en/authentication/troubleshooting-ssh/error-host-key-verification-failed"
+            ><span
+              class="relative -top-[0.1rem] undefined light font-sans text-base text-textOff dark:text-textOffDark selection:bg-super/50 selection:text-textMain dark:selection:bg-superDuper/10 dark:selection:text-superDark"
+              ><div
+                class="inline-flex h-[1rem] min-w-[1rem] items-center justify-center rounded-full px-[0.3em] text-center font-mono text-[0.60rem] tabular-nums md:hover:text-white border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50 dark:ring-borderMainDark/50 dark:border-borderMainDark/50 transition duration-300 bg-offsetPlus dark:bg-offsetPlusDark md:hover:bg-super"
+              >
+                1
+              </div></span
+            ></a
+          ></span
+        ><span
+          ><span class="whitespace-nowrap"
+            ><a
+              target="_blank"
+              rel="nofollow noopener"
+              class="citation ml-xs inline"
+              data-state="closed"
+              aria-label="GitHub's SSH key fingerprints - GitHub Docs"
+              href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/githubs-ssh-key-fingerprints"
+              ><span
+                class="relative -top-[0.1rem] undefined light font-sans text-base text-textOff dark:text-textOffDark selection:bg-super/50 selection:text-textMain dark:selection:bg-superDuper/10 dark:selection:text-superDark"
+                ><div
+                  class="inline-flex h-[1rem] min-w-[1rem] items-center justify-center rounded-full px-[0.3em] text-center font-mono text-[0.60rem] tabular-nums md:hover:text-white border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50 dark:ring-borderMainDark/50 dark:border-borderMainDark/50 transition duration-300 bg-offsetPlus dark:bg-offsetPlusDark md:hover:bg-super"
+                >
+                  2
+                </div></span
+              ></a
+            >.</span
+          ></span
+        ><span></span>
+        <h2 class="mb-2 mt-6 text-lg first:mt-3">Zusätzliche Maßnahmen</h2>
+        <span>Wenn das Problem weiterhin besteht:</span>
+        <ol class="marker:text-textOff list-decimal pl-8">
+          <li index="0">
+            <span> </span
+            ><span
+              ><span
+                >Überprüfen Sie, ob Ihre SSH-Schlüssel korrekt eingerichtet
+                sind:</span
+              ></span
+            ><span> </span
+            ><span
+              ><div class="w-full max-w-[90vw]">
+                <pre
+                  class="not-prose w-full overflow-hidden rounded font-mono text-sm font-extralight"
+                ><div class="codeWrapper text-textMainDark selection:!text-superDark selection:bg-superDuper/10 bg-offset dark:bg-offsetDark my-md relative flex flex-col rounded font-mono text-sm font-thin"><div><div class="text-textOff dark:text-textOffDark bg-offsetPlus dark:bg-offsetPlusDark py-xs px-sm z-10 inline-block rounded-br rounded-tl-[3px] font-thin">bash</div></div><div class="sc-gtLWhw kqHiRG"><span style="font-size: inherit; font-family: inherit; background: transparent; color: rgb(197, 200, 198); border-radius: 3px; display: flex; line-height: 1.42857; overflow-x: auto; white-space: pre;"><code style="font-size: inherit; font-family: inherit; line-height: 1.66667; padding: 8px; white-space: pre-wrap;"><span style="opacity: 1; font-size: inherit; line-height: 1.42857; color: rgb(197, 200, 198); background-color: transparent; flex-shrink: 0; padding: 8px; text-align: right; user-select: none;"><span class="token token" style="color: rgb(197, 200, 198);">ls</span><span> -al ~/.ssh
+            </span></span><span style="opacity: 1; font-size: inherit; line-height: 1.42857; color: rgb(197, 200, 198); background-color: transparent; flex-shrink: 0; padding: 8px; text-align: right; user-select: none;"></span></code></span><button aria-label="Copy Code" type="button" class="sc-blHHSb fdjstX"><svg class="icon" viewBox="0 0 384 512" width="16pt" height="16pt" fill="#c5c8c6"><path d="M280 240H168c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h112c4.4 0 8-3.6 8-8v-16c0-4.4-3.6-8-8-8zm0 96H168c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h112c4.4 0 8-3.6 8-8v-16c0-4.4-3.6-8-8-8zM112 232c-13.3 0-24 10.7-24 24s10.7 24 24 24 24-10.7 24-24-10.7-24-24-24zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24 24-10.7 24-24-10.7-24-24-24zM336 64h-80c0-35.3-28.7-64-64-64s-64 28.7-64 64H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM192 48c8.8 0 16 7.2 16 16s-7.2 16-16 16-16-7.2-16-16 7.2-16 16-16zm144 408c0 4.4-3.6 8-8 8H56c-4.4 0-8-3.6-8-8V120c0-4.4 3.6-8 8-8h40v32c0 8.8 7.2 16 16 16h160c8.8 0 16-7.2 16-16v-32h40c4.4 0 8 3.6 8 8v336z"></path></svg></button></div></div></pre></div></span
+            ><span> </span>
+          </li>
+          <li index="1">
+            <span> </span
+            ><span
+              ><span
+                >Wenn keine Schlüssel vorhanden sind, generieren Sie einen
+                neuen:</span
+              ></span
+            ><span> </span
+            ><span
+              ><div class="w-full max-w-[90vw]">
+                <pre
+                  class="not-prose w-full overflow-hidden rounded font-mono text-sm font-extralight"
+                ><div class="codeWrapper text-textMainDark selection:!text-superDark selection:bg-superDuper/10 bg-offset dark:bg-offsetDark my-md relative flex flex-col rounded font-mono text-sm font-thin"><div><div class="text-textOff dark:text-textOffDark bg-offsetPlus dark:bg-offsetPlusDark py-xs px-sm z-10 inline-block rounded-br rounded-tl-[3px] font-thin">bash</div></div><div class="sc-gtLWhw kqHiRG"><span style="font-size: inherit; font-family: inherit; background: transparent; color: rgb(197, 200, 198); border-radius: 3px; display: flex; line-height: 1.42857; overflow-x: auto; white-space: pre;"><code style="font-size: inherit; font-family: inherit; line-height: 1.66667; padding: 8px; white-space: pre-wrap;"><span style="opacity: 1; font-size: inherit; line-height: 1.42857; color: rgb(197, 200, 198); background-color: transparent; flex-shrink: 0; padding: 8px; text-align: right; user-select: none;"><span>ssh-keygen -t ed25519 -C </span><span class="token token" style="color: rgb(181, 189, 104);">"ihre_email@example.com"</span><span>
+            </span></span><span style="opacity: 1; font-size: inherit; line-height: 1.42857; color: rgb(197, 200, 198); background-color: transparent; flex-shrink: 0; padding: 8px; text-align: right; user-select: none;"></span></code></span><button aria-label="Copy Code" type="button" class="sc-blHHSb fdjstX"><svg class="icon" viewBox="0 0 384 512" width="16pt" height="16pt" fill="#c5c8c6"><path d="M280 240H168c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h112c4.4 0 8-3.6 8-8v-16c0-4.4-3.6-8-8-8zm0 96H168c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h112c4.4 0 8-3.6 8-8v-16c0-4.4-3.6-8-8-8zM112 232c-13.3 0-24 10.7-24 24s10.7 24 24 24 24-10.7 24-24-10.7-24-24-24zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24 24-10.7 24-24-10.7-24-24-24zM336 64h-80c0-35.3-28.7-64-64-64s-64 28.7-64 64H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM192 48c8.8 0 16 7.2 16 16s-7.2 16-16 16-16-7.2-16-16 7.2-16 16-16zm144 408c0 4.4-3.6 8-8 8H56c-4.4 0-8-3.6-8-8V120c0-4.4 3.6-8 8-8h40v32c0 8.8 7.2 16 16 16h160c8.8 0 16-7.2 16-16v-32h40c4.4 0 8 3.6 8 8v336z"></path></svg></button></div></div></pre></div></span
+            ><span> </span>
+          </li>
+          <li index="2">
+            <span> </span
+            ><span
+              ><span
+                >Fügen Sie den neuen Schlüssel zu Ihrem GitHub-Konto hinzu</span
+              ><span
+                ><a
+                  target="_blank"
+                  rel="nofollow noopener"
+                  class="citation ml-xs inline"
+                  data-state="closed"
+                  aria-label="How to Fix the Host Key Verification Failed Git Clone Error"
+                  href="https://1kevinson.com/how-to-fix-the-host-key-verification-failed-git-clone-error/"
+                  ><span
+                    class="relative -top-[0.1rem] undefined light font-sans text-base text-textOff dark:text-textOffDark selection:bg-super/50 selection:text-textMain dark:selection:bg-superDuper/10 dark:selection:text-superDark"
+                    ><div
+                      class="inline-flex h-[1rem] min-w-[1rem] items-center justify-center rounded-full px-[0.3em] text-center font-mono text-[0.60rem] tabular-nums md:hover:text-white border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50 dark:ring-borderMainDark/50 dark:border-borderMainDark/50 transition duration-300 bg-offsetPlus dark:bg-offsetPlusDark md:hover:bg-super"
+                    >
+                      3
+                    </div></span
+                  ></a
+                ></span
+              ><span
+                ><span class="whitespace-nowrap"
+                  ><a
+                    target="_blank"
+                    rel="nofollow noopener"
+                    class="citation ml-xs inline"
+                    data-state="closed"
+                    aria-label="Resolving Host Key Verification Issue with GitHub SSH"
+                    href="https://www.devopsconsulting.in/blog/resolving-host-key-verification-issue-with-github-ssh/"
+                    ><span
+                      class="relative -top-[0.1rem] undefined light font-sans text-base text-textOff dark:text-textOffDark selection:bg-super/50 selection:text-textMain dark:selection:bg-superDuper/10 dark:selection:text-superDark"
+                      ><div
+                        class="inline-flex h-[1rem] min-w-[1rem] items-center justify-center rounded-full px-[0.3em] text-center font-mono text-[0.60rem] tabular-nums md:hover:text-white border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50 dark:ring-borderMainDark/50 dark:border-borderMainDark/50 transition duration-300 bg-offsetPlus dark:bg-offsetPlusDark md:hover:bg-super"
+                      >
+                        4
+                      </div></span
+                    ></a
+                  >.</span
+                ></span
+              ><span></span></span
+            ><span> </span>
+          </li>
+        </ol>
+        <span
+          >Durch diese Schritte sollten Sie in der Lage sein, die
+          Host-Key-Verifizierung zu lösen und eine sichere Verbindung zu GitHub
+          herzustellen.</span
+        >
+      </div>
+    </div>
+  </body>
+</html>
