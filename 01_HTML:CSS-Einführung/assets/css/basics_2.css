@@ -1,0 +1,30 @@
+/* 
+header schirft: rgb(201, 86, 58)
+    background: 
+    header back: 
+    
+    */
+
+
+#inline,
+#col {
+    display: inline-block;
+}
+
+header {
+    padding-left: 50px;
+    background-color: rgb(128, 128, 128);
+}
+
+header>p {
+    margin: 0;
+}
+
+#col {
+    color: green;
+    font-size: large;
+}
+
+body {
+    background-color: rgb(211, 211, 211);
+}

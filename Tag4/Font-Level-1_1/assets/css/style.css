@@ -1,0 +1,88 @@
+@font-face {
+    font-family: "Roboto-light";
+    src: url("../fonts/Roboto/Roboto-Light.ttf");
+}
+
+@font-face {
+    font-family: "Dancing_Bold";
+    src: url("../fonts/Dancing_Script/DancingScript-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Poppins_light";
+    src: url("../fonts/Poppins/Poppins-Light.ttf");
+}
+
+@font-face {
+    font-family: "Cinzel_med";
+    src: url("../fonts/Cinzel/Cinzel-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Grotesk_bold";
+    src: url("../fonts/Host_Grotesk/HostGrotesk-Bold.ttf");
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 20px;
+    text-align: center;
+    margin: 0 20%;
+}
+
+h1 {
+    font-family: "Roboto-light";
+    font-size: 20px;
+    color: aqua;
+    background-color: blueviolet;
+    margin: 20px 0;
+
+    border-radius: 10px;
+}
+
+p:nth-of-type(1) {
+
+    font-size: 20px;
+    color: blueviolet;
+    margin-bottom: 10px;
+
+}
+
+p:nth-of-type(2) {
+    font-family: "Poppins_light";
+    font-size: 20px;
+    color: blueviolet;
+
+    margin-bottom: 10px;
+
+}
+
+p:nth-of-type(3) {
+    font-family: "Cinzel_med";
+    font-size: 20px;
+    color: wheat;
+    background-color: lime;
+    margin-bottom: 10px;
+}
+
+p:nth-of-type(4) {
+    font-family: "Grotesk_bold";
+    font-size: 20px;
+    color: blueviolet;
+    margin-bottom: 10px;
+}
+
+
+p:nth-of-type(5) {
+    font-family: "Dancing_Bold";
+    font-size: 20px;
+    color: aqua;
+    background-color: blueviolet;
+    margin-bottom: 10px;
+}

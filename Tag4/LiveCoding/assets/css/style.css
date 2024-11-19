@@ -1,0 +1,138 @@
+@font-face {
+    font-family: "Roboto-light";
+    src: url("../fonts/Roboto/Roboto-Light.ttf");
+}
+
+@font-face {
+    font-family: "Dancing_Bold";
+    src: url("../fonts/Dancing_Script/DancingScript-Bold.ttf");
+}
+
+@font-face {
+    font-family: "DancingScript-Var";
+    src: url("../fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+header {
+    background-color: antiquewhite;
+    padding: 30px 0 30px 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-family: "Roboto-light";
+    font-size: 4rem;
+}
+
+header ul {
+    list-style: none;
+    color: green;
+    margin-bottom: 40px;
+}
+
+header ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header ul li a {
+    color: green;
+    text-decoration: none;
+}
+
+header ul li span {
+    color: chartreuse;
+}
+
+header ul li a:focus {
+    color: yellow;
+}
+
+header ul li a:visited {
+    color: black;
+}
+
+button {
+    padding: 0 30px;
+    border: none;
+    background-color: chartreuse;
+    cursor: pointer;
+
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: black;
+    color: chartreuse;
+    border: 1px solid chartreuse;
+}
+
+article:nth-of-type(1) article p:nth-of-type(1) {
+    font-family: "Dancing_Script-Bold";
+    font-size: 5;
+    color: black;
+    text-decoration: none 3px solid green;
+}
+
+article:nth-of-type(1) article p:nth-last-of-type(2) {
+    font-size: 30px;
+    font-family: "Dancing_Script-Var";
+    font-weight: bolder;
+    font-style: italic;
+    word-break: break-all;
+}
+
+section:nth-of-type(2) {
+    background-color: antiquewhite;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    padding: 50px 0;
+}
+
+section:nth-of-type(2) article:nth-of-type(1) {
+    background-color: aqua;
+    width: 600px;
+    margin-bottom: 60px;
+}
+
+section:nth-of-type(2) article:nth-of-type(2) {
+    background-color: chocolate;
+    width: 50vw;
+    height: 5vh;
+    margin-bottom: 50px;
+}
+
+section:nth-of-type(2) {
+    width: 80vw;
+    height: 20vh;
+}
+
+section:nth-of-type(2)
+article:nth-of-type(3) p {
+    background-color: cornflowerblue;
+    width: 30em;
+}
+
+header, article {
+    display: inline-block contents;
+    width: 75%;
+    margin: 0px auto;
+
+}
+
+section:nth-of-type(2)
+article:nth-of-type(4) p {
+    background-color: plum;
+    width: 80%;
+    height: 70%;
+}

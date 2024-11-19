@@ -1,0 +1,70 @@
+@font-face {
+    font-family: "Chelsea";
+    src: url("../fonts/Chelsea_Market/ChelseaMarket-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Fredoka";
+    src: url("../fonts/Fredoka/Fredoka-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Pacifico";
+    src: url("../fonts/Pacifico/Pacifico-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Press";
+    src: url("../fonts/Press_Start_2P/PressStart2P-Regular.ttf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 20px;
+    text-align: center;
+
+    width: 80%;
+    margin-left: 10%;
+}
+
+h1 {
+    margin: 20px 0;
+    padding: 10px;
+
+    font-family: "Press";
+    background-color: greenyellow;
+
+}
+
+p {
+    font-family: "Pacifico";
+    font-size: 20px;
+}
+
+p em {
+    
+    font-family: "Pacifico";
+    font-size: 20px;
+    text-shadow: 5px 0px 5px red;
+}
+
+p span {
+    
+    font-family: "Fredoka";
+    font-size: 30px;
+}
+
+p strong {
+    font-family: "Chelsea";
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}

@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 20px;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.pets {
+    border: 2px solid black;
+    padding: 40px;
+}
+
+.pets ul li {
+    list-style: none;
+}
+
+.heading {
+    font-size: 48px;
+}
+
+.heading::before,
+.head2::before {
+    content: none !important;
+}
+
+.head2 {
+    font-size: 30px;
+}
+
+ul ul li {
+    margin-left: 30px;
+}
+
+.dog li::before {
+    content: "🐶";
+}
+
+.cat li::before {
+    content: "🐱";
+}
+
+.parrot li::before {
+    content: "🦜";
+}
+
+.snake li::before {
+    content: "🐍";
+}
+
+.lizard li::before {
+    content: "🦎";
+}

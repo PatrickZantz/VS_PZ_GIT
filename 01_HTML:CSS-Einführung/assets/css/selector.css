@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+section {
+    background: #A5D6A7;
+    margin: 10px 10px 0 10px;
+}
+
+section h1 {
+    background: #4DD0E1;
+}
+
+section p {
+    background: #C5CAE9;
+}
+
+article {
+    background: #F48FB1;
+    margin: 0 10px 10px 10px;
+
+}
+
+article h1 {
+    background: #7986cb;
+}
+
+article p {
+    background: #ff8a65;
+}
+
+button {
+    background: #304FFE;
+    color: white;
+}
